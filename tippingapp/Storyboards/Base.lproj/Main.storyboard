@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tippingapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-dC-fBk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background-hero" translatesAutoresizingMaskIntoConstraints="NO" id="pie-j4-ht1">
+                                        <rect key="frame" x="0.0" y="-14" width="414" height="404"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-sN-0CK" customClass="RoundedTranslucentView" customModule="tippingapp" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="75" width="372" height="203"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vp2-sv-Htc">
+                                                <rect key="frame" x="50" y="25" width="272" height="61.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="53"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="rBo-PC-VUh">
+                                                <rect key="frame" x="75" y="110.5" width="222" height="57.5"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.7508278145695364" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="32"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.30010865066225167" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vp2-sv-Htc" firstAttribute="leading" secondItem="TrO-sN-0CK" secondAttribute="leading" constant="50" id="5AE-CD-a5y"/>
+                                            <constraint firstAttribute="trailing" secondItem="rBo-PC-VUh" secondAttribute="trailing" constant="75" id="LvL-Z3-6Qg"/>
+                                            <constraint firstAttribute="bottom" secondItem="rBo-PC-VUh" secondAttribute="bottom" constant="35" id="bqG-HE-KMF"/>
+                                            <constraint firstAttribute="trailing" secondItem="vp2-sv-Htc" secondAttribute="trailing" constant="50" id="dnW-b6-Bjy"/>
+                                            <constraint firstItem="vp2-sv-Htc" firstAttribute="top" secondItem="TrO-sN-0CK" secondAttribute="top" constant="25" id="hj7-5r-0E2"/>
+                                            <constraint firstItem="rBo-PC-VUh" firstAttribute="leading" secondItem="TrO-sN-0CK" secondAttribute="leading" constant="75" id="k4A-q7-Q8n"/>
+                                            <constraint firstItem="rBo-PC-VUh" firstAttribute="top" secondItem="vp2-sv-Htc" secondAttribute="bottom" constant="24" id="vRG-MS-RB6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTb-NF-a19">
+                                        <rect key="frame" x="0.0" y="325" width="414" height="376"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sTH-ix-Lg2" firstAttribute="trailing" secondItem="TrO-sN-0CK" secondAttribute="trailing" constant="21" id="3qQ-Vx-nYh"/>
+                                    <constraint firstItem="pie-j4-ht1" firstAttribute="top" secondItem="FBd-dC-fBk" secondAttribute="top" constant="-14" id="9Bj-fk-sLK"/>
+                                    <constraint firstItem="TrO-sN-0CK" firstAttribute="leading" secondItem="sTH-ix-Lg2" secondAttribute="leading" constant="21" id="CGV-d8-qFk"/>
+                                    <constraint firstItem="pie-j4-ht1" firstAttribute="bottom" secondItem="TrO-sN-0CK" secondAttribute="bottom" constant="112" id="NQS-D6-Pe3"/>
+                                    <constraint firstItem="pie-j4-ht1" firstAttribute="width" secondItem="sTH-ix-Lg2" secondAttribute="width" id="pRw-GQ-Rdg"/>
+                                    <constraint firstItem="TrO-sN-0CK" firstAttribute="top" secondItem="sTH-ix-Lg2" secondAttribute="top" constant="75" id="t9C-FJ-9Bc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="KHT-f0-78e"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="sTH-ix-Lg2"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FBd-dC-fBk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GmT-F0-LD9"/>
+                            <constraint firstAttribute="trailing" secondItem="FBd-dC-fBk" secondAttribute="trailing" id="KMv-py-YQ1"/>
+                            <constraint firstAttribute="bottom" secondItem="FBd-dC-fBk" secondAttribute="bottom" id="pPq-Dp-FCb"/>
+                            <constraint firstItem="FBd-dC-fBk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xO5-Bi-7h8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-hero" width="459" height="399"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
