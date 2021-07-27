@@ -1,5 +1,5 @@
 //
-//  RoundedCornersView.swift
+//  RoundedTotalTranslucentView.swift
 //  tippingapp
 //
 //  Created by Jackson Mai on 7/27/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RoundedCornersView: UIView {
+class RoundedTotalTranslucentView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,7 +16,5 @@ class RoundedCornersView: UIView {
 
     func customizeButton() {
         layer.cornerRadius = 50
-
     }
-
 }

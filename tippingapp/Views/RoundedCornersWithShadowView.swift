@@ -2,12 +2,12 @@
 //  RoundedCornersView.swift
 //  tippingapp
 //
-//  Created by Jackson Mai on 7/27/21.
+//  Created by Jackson Mai on 7/23/21.
 //
 
 import UIKit
 
-class RoundedCornersView: UIView {
+class RoundedCornersWithShadowView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,7 +16,10 @@ class RoundedCornersView: UIView {
 
     func customizeButton() {
         layer.cornerRadius = 50
-
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.75
+        layer.shadowOffset = .zero
+        layer.shadowRadius = 2
     }
 
 }
