@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B00AC5926A5F9F100D690FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00AC5826A5F9F100D690FA /* AppDelegate.swift */; };
 		1B00AC5B26A5F9F100D690FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00AC5A26A5F9F100D690FA /* SceneDelegate.swift */; };
-		1B00AC5D26A5F9F100D690FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00AC5C26A5F9F100D690FA /* ViewController.swift */; };
+		1B00AC5D26A5F9F100D690FA /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00AC5C26A5F9F100D690FA /* CalculatorViewController.swift */; };
 		1B00AC6026A5F9F100D690FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B00AC5E26A5F9F100D690FA /* Main.storyboard */; };
 		1B00AC6226A5F9F200D690FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B00AC6126A5F9F200D690FA /* Assets.xcassets */; };
 		1B00AC6526A5F9F200D690FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B00AC6326A5F9F200D690FA /* LaunchScreen.storyboard */; };
@@ -17,13 +17,16 @@
 		1B00AC7226AB00B500D690FA /* RoundedCornersWithShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00AC7126AB00B500D690FA /* RoundedCornersWithShadowView.swift */; };
 		1B204D4526B0637000D1DBC3 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4426B0637000D1DBC3 /* RoundedCornersView.swift */; };
 		1B204D4726B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4626B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift */; };
+		1B204D4926BB00B300D1DBC3 /* PercentageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4826BB00B300D1DBC3 /* PercentageButtonView.swift */; };
+		1B204D4B26BB43DB00D1DBC3 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4A26BB43DB00D1DBC3 /* CurrencyTextField.swift */; };
+		1B204D4D26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B00AC5526A5F9F100D690FA /* tippingapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tippingapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B00AC5826A5F9F100D690FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B00AC5A26A5F9F100D690FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B00AC5C26A5F9F100D690FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B00AC5C26A5F9F100D690FA /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		1B00AC5F26A5F9F100D690FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B00AC6126A5F9F200D690FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B00AC6426A5F9F200D690FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		1B00AC7126AB00B500D690FA /* RoundedCornersWithShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersWithShadowView.swift; sourceTree = "<group>"; };
 		1B204D4426B0637000D1DBC3 /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		1B204D4626B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTotalTranslucentView.swift; sourceTree = "<group>"; };
+		1B204D4826BB00B300D1DBC3 /* PercentageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageButtonView.swift; sourceTree = "<group>"; };
+		1B204D4A26BB43DB00D1DBC3 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalRoundedCornersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 				1B00AC7126AB00B500D690FA /* RoundedCornersWithShadowView.swift */,
 				1B204D4426B0637000D1DBC3 /* RoundedCornersView.swift */,
 				1B204D4626B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift */,
+				1B204D4826BB00B300D1DBC3 /* PercentageButtonView.swift */,
+				1B204D4A26BB43DB00D1DBC3 /* CurrencyTextField.swift */,
+				1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,7 +107,7 @@
 		1B00AC6E26A780EF00D690FA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B00AC5C26A5F9F100D690FA /* ViewController.swift */,
+				1B00AC5C26A5F9F100D690FA /* CalculatorViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -173,11 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B00AC5D26A5F9F100D690FA /* ViewController.swift in Sources */,
+				1B00AC5D26A5F9F100D690FA /* CalculatorViewController.swift in Sources */,
 				1B00AC5926A5F9F100D690FA /* AppDelegate.swift in Sources */,
+				1B204D4926BB00B300D1DBC3 /* PercentageButtonView.swift in Sources */,
 				1B00AC7026A781A100D690FA /* RoundedTranslucentView.swift in Sources */,
+				1B204D4D26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift in Sources */,
 				1B204D4726B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift in Sources */,
 				1B00AC7226AB00B500D690FA /* RoundedCornersWithShadowView.swift in Sources */,
+				1B204D4B26BB43DB00D1DBC3 /* CurrencyTextField.swift in Sources */,
 				1B00AC5B26A5F9F100D690FA /* SceneDelegate.swift in Sources */,
 				1B204D4526B0637000D1DBC3 /* RoundedCornersView.swift in Sources */,
 			);
