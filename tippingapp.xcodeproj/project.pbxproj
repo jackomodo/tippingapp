@@ -22,6 +22,7 @@
 		1B204D4D26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */; };
 		1B57569726CC0C6700089C11 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569626CC0C6700089C11 /* UIViewController+.swift */; };
 		1B57569B26CC214000089C11 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569A26CC214000089C11 /* TopView.swift */; };
+		1B57569D26CEAF9200089C11 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569C26CEAF9200089C11 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalRoundedCornersView.swift; sourceTree = "<group>"; };
 		1B57569626CC0C6700089C11 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		1B57569A26CC214000089C11 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		1B57569C26CEAF9200089C11 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1B00AC5C26A5F9F100D690FA /* CalculatorViewController.swift */,
+				1B57569C26CEAF9200089C11 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				1B204D4B26BB43DB00D1DBC3 /* CurrencyTextField.swift in Sources */,
 				1B57569726CC0C6700089C11 /* UIViewController+.swift in Sources */,
 				1B00AC5B26A5F9F100D690FA /* SceneDelegate.swift in Sources */,
+				1B57569D26CEAF9200089C11 /* SettingsViewController.swift in Sources */,
 				1B57569B26CC214000089C11 /* TopView.swift in Sources */,
 				1B204D4526B0637000D1DBC3 /* RoundedCornersView.swift in Sources */,
 			);
