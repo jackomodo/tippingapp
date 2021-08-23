@@ -489,7 +489,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-UU-YJv">
                                         <rect key="frame" x="35" y="77.5" width="304" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-65-oqE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-65-oqE">
                                                 <rect key="frame" x="0.0" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.8509416390728477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -498,19 +498,19 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
                                                 <rect key="frame" x="78.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
                                                 <rect key="frame" x="157" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
                                                 <rect key="frame" x="235.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -546,6 +546,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="icon-settings" id="dGp-Xf-xo0"/>
+                    <connections>
+                        <outlet property="firstPercentageTextField" destination="Y9x-65-oqE" id="CbR-2Z-TbM"/>
+                        <outlet property="fourthPercentageTextField" destination="qRb-52-4FC" id="WJP-0I-dbO"/>
+                        <outlet property="homeButton" destination="DiA-IA-ve0" id="Exm-zf-7q0"/>
+                        <outlet property="secondPercentageTextField" destination="7z1-UJ-Bge" id="YUj-ID-CVD"/>
+                        <outlet property="thirdPercentageTextField" destination="htQ-dX-UeP" id="IH4-FA-WEK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ma4-p8-MDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
