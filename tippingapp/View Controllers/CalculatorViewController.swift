@@ -53,9 +53,9 @@ class CalculatorViewController: UIViewController {
     //MARK: - Functions
     
     func updateViews() {
-        
+
         tipAmountTextField.text = String(format: "%0.2f", round(100 * tipAmount) / 100)
-        tipPercentageTextField.text = String(tipPercentage.removeZerosFromEnd()) + "%"
+        tipPercentageTextField.text = String(round(100 * tipPercentage) / 100) + "%"
         splitBillTextField.text = String(splitBillAmount.removeZerosFromEnd())
         totalAmountLabel.text = String(format: "%0.2f", round(100 * (billAmount + tipAmount)) / 100)
         eachPayLabel.text = String(format: "%0.2f", round(100 * (billAmount + tipAmount)  / splitBillAmount) / 100)
@@ -100,15 +100,40 @@ class CalculatorViewController: UIViewController {
         }
     }
     @IBAction func minusTipAmountButtonPressed(_ sender: Any) {
+        billAmount = billAmountTextField.doubleValue
+        tipAmount = tipAmountTextField.doubleValue
+        if tipAmount >= 1.0 {
+            tipAmount -= 1.0
+            tipPercentage = tipAmount / billAmount * 100
+        }
+        updateViews()
     }
     @IBAction func addTipAmountButtonPressed(_ sender: Any) {
+        billAmount = billAmountTextField.doubleValue
+        tipAmount = tipAmountTextField.doubleValue
+        tipAmount += 1.0
+        tipPercentage = tipAmount / billAmount * 100
+        updateViews()
     }
     @IBAction func minusTipAmountPercentageButtonPressed(_ sender: Any) {
+        billAmount = billAmountTextField.doubleValue
+        tipAmount = tipAmountTextField.doubleValue
+
+        if tipPercentage >= 1.0 {
+            tipPercentage -= 1.0
+            tipAmount = billAmount * tipPercentage / 100
+        }
+        updateViews()
     }
     @IBAction func addTipAmountPercentageButtonPressed(_ sender: Any) {
+        billAmount = billAmountTextField.doubleValue
+        tipAmount = tipAmountTextField.doubleValue
+        tipAmount = billAmount * tipPercentage / 100
+        tipPercentage += 1.0
+        updateViews()
     }
     @IBAction func minusSplitBillButtonPressed(_ sender: Any) {
-        if splitBillAmount != 1.0 {
+        if splitBillAmount >= 2.0 {
             splitBillAmount -= 1.0
         }
         updateViews()
