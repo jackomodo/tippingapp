@@ -46,5 +46,7 @@ class SettingsViewController: UIViewController {
         thirdPercentageTextField.text = thirdPercentage + "%"
         fourthPercentageTextField.text = fourthPercentage + "%"
     }
+    
+    //MARK: - Actions
 
 }

@@ -49,3 +49,19 @@ extension Decimal {
 extension LosslessStringConvertible {
     var string: String { .init(self) }
 }
+
+extension Double {
+    func removeZerosFromEnd() -> String {
+        let formatter = NumberFormatter()
+        let number = NSNumber(value: self)
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 16 //maximum digits in Double after dot (maximum precision)
+        return String(formatter.string(from: number) ?? "")
+    }
+}
+
+extension String {
+func toDouble() -> Double? {
+    return NumberFormatter().number(from: self)?.doubleValue
+ }
+}
