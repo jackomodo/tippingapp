@@ -39,6 +39,9 @@
                                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.7508278145695364" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                        <connections>
+                                                            <action selector="billAmountEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="FIa-YH-jAz"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="0.30010865066225167" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +216,9 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                        <connections>
+                                                                            <action selector="tipAmountEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Y14-45-8EC"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnO-7P-5uR">
                                                                         <rect key="frame" x="263" y="0.0" width="28" height="50"/>
@@ -233,14 +239,17 @@
                                                                             <action selector="minusTipAmountPercentageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk8-EK-g12"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="o1s-St-Ro5">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="o1s-St-Ro5">
                                                                         <rect key="frame" x="33" y="0.0" width="75" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="7WJ-v6-hWN"/>
                                                                             <constraint firstAttribute="width" constant="75" id="EBA-b1-uSQ"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                        <connections>
+                                                                            <action selector="tipPercentageEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="I84-vP-CcO"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azG-Mz-yT3">
                                                                         <rect key="frame" x="113" y="0.0" width="28" height="40"/>
@@ -292,6 +301,9 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <connections>
+                                                                            <action selector="splitBillEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MMw-Uy-a3R"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ae-9U6">
                                                                         <rect key="frame" x="113" y="0.0" width="28" height="40"/>
@@ -529,7 +541,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-UU-YJv">
                                         <rect key="frame" x="35" y="77.5" width="304" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-65-oqE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-65-oqE">
                                                 <rect key="frame" x="0.0" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.8509416390728477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -538,19 +550,19 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
                                                 <rect key="frame" x="78.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
                                                 <rect key="frame" x="157" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
                                                 <rect key="frame" x="235.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>

@@ -26,6 +26,10 @@ extension CurrencyTextField {
 }
 
 extension UITextField {
+    
+}
+
+extension UITextField {
      var string: String { text ?? "9" }
 }
 extension NumberFormatter {

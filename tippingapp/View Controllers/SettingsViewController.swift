@@ -19,10 +19,10 @@ class SettingsViewController: UIViewController {
     
     //MARK: - Variables
     
-    var firstPercentage = "10"
-    var secondPercentage = "15"
-    var thirdPercentage = "20"
-    var fourthPercentage = "25"
+    var firstPercentageAmount = 10.0
+    var secondPercentageAmount = 15.0
+    var thirdPercentageAmount = 20.0
+    var fourthPercentageAmount = 25.0
     
     //MARK: - Life Cycles
     
@@ -41,10 +41,10 @@ class SettingsViewController: UIViewController {
     //MARK: - Functions
     
     func updateViews() {
-        firstPercentageTextField.text = firstPercentage + "%"
-        secondPercentageTextField.text = secondPercentage + "%"
-        thirdPercentageTextField.text = thirdPercentage + "%"
-        fourthPercentageTextField.text = fourthPercentage + "%"
+        firstPercentageTextField.text = String(firstPercentageAmount.removeZerosFromEnd()) + "%"
+        secondPercentageTextField.text = String(secondPercentageAmount.removeZerosFromEnd()) + "%"
+        thirdPercentageTextField.text = String(thirdPercentageAmount.removeZerosFromEnd()) + "%"
+        fourthPercentageTextField.text = String(fourthPercentageAmount.removeZerosFromEnd()) + "%"
     }
     
     //MARK: - Actions

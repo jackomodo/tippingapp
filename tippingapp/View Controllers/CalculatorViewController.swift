@@ -62,6 +62,10 @@ class CalculatorViewController: UIViewController {
         print("view updated")
     }
     
+    func calculateTip() {
+        tipPercentage = tipAmount / billAmount * 100
+    }
+    
     //MARK: - Actions
 
     @IBAction func firstPercentageButtonPressed(_ sender: Any) {
@@ -100,37 +104,52 @@ class CalculatorViewController: UIViewController {
         }
     }
     @IBAction func minusTipAmountButtonPressed(_ sender: Any) {
-        billAmount = billAmountTextField.doubleValue
-        tipAmount = tipAmountTextField.doubleValue
-        if tipAmount >= 1.0 {
-            tipAmount -= 1.0
+        if billAmountTextField.doubleValue != 0.0 {
+            billAmount = billAmountTextField.doubleValue
+            tipAmount = tipAmountTextField.doubleValue
+            if tipAmount < 1.0 {
+                tipAmount = 0.0
+            }
+            if tipAmount >= 1.0 {
+                tipAmount -= 1.0
+            }
             tipPercentage = tipAmount / billAmount * 100
+
+            updateViews()
         }
-        updateViews()
     }
     @IBAction func addTipAmountButtonPressed(_ sender: Any) {
-        billAmount = billAmountTextField.doubleValue
-        tipAmount = tipAmountTextField.doubleValue
-        tipAmount += 1.0
-        tipPercentage = tipAmount / billAmount * 100
-        updateViews()
+        if billAmountTextField.doubleValue != 0.0 {
+            billAmount = billAmountTextField.doubleValue
+            tipAmount = tipAmountTextField.doubleValue
+            tipAmount += 1.0
+            tipPercentage = tipAmount / billAmount * 100
+            updateViews()
+        }
     }
     @IBAction func minusTipAmountPercentageButtonPressed(_ sender: Any) {
-        billAmount = billAmountTextField.doubleValue
-        tipAmount = tipAmountTextField.doubleValue
-
-        if tipPercentage >= 1.0 {
-            tipPercentage -= 1.0
+        if billAmountTextField.doubleValue != 0.0 {
+            billAmount = billAmountTextField.doubleValue
+            tipAmount = tipAmountTextField.doubleValue
+            if tipPercentage < 1.0 {
+                tipPercentage = 0.0
+            }
+            if tipPercentage >= 1.0 {
+                tipPercentage -= 1.0
+            }
             tipAmount = billAmount * tipPercentage / 100
+
+            updateViews()
         }
-        updateViews()
     }
     @IBAction func addTipAmountPercentageButtonPressed(_ sender: Any) {
-        billAmount = billAmountTextField.doubleValue
-        tipAmount = tipAmountTextField.doubleValue
-        tipAmount = billAmount * tipPercentage / 100
-        tipPercentage += 1.0
-        updateViews()
+        if billAmountTextField.doubleValue != 0.0 {
+            billAmount = billAmountTextField.doubleValue
+            tipAmount = tipAmountTextField.doubleValue
+            tipAmount = billAmount * tipPercentage / 100
+            tipPercentage += 1.0
+            updateViews()
+        }
     }
     @IBAction func minusSplitBillButtonPressed(_ sender: Any) {
         if splitBillAmount >= 2.0 {
@@ -142,5 +161,29 @@ class CalculatorViewController: UIViewController {
         splitBillAmount += 1.0
         updateViews()
     }
+
+    
+    @IBAction func billAmountEntered(_ sender: Any) {
+        billAmount = billAmountTextField.doubleValue
+        print(billAmount)
+    }
+
+    @IBAction func tipAmountEntered(_ sender: Any) {
+        tipAmount = tipAmountTextField.doubleValue
+        calculateTip()
+        updateViews()
+    }
+    @IBAction func tipPercentageEntered(_ sender: Any) {
+        
+    }
+    
+    @IBAction func splitBillEntered(_ sender: Any) {
+        splitBillAmount = Double(splitBillTextField.text!) ?? splitBillAmount
+        if splitBillAmount == 0.0 {
+            splitBillAmount += 1.0
+        }
+        updateViews()
+    }
+    
 }
 
