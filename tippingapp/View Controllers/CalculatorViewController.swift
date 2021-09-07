@@ -16,6 +16,10 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var secondPercentageButton: UIButton!
     @IBOutlet weak var thirdPercentageButton: UIButton!
     @IBOutlet weak var fourthPercentageButton: UIButton!
+    @IBOutlet weak var firstPercentageLabel: UILabel!
+    @IBOutlet weak var secondPercentageLabel: UILabel!
+    @IBOutlet weak var thirdPercentageLabel: UILabel!
+    @IBOutlet weak var fourthPercentageLabel: UILabel!
     @IBOutlet weak var tipAmountTextField: CurrencyTextField!
     @IBOutlet weak var tipPercentageTextField: UITextField!
     @IBOutlet weak var splitBillTextField: UITextField!
@@ -37,23 +41,32 @@ class CalculatorViewController: UIViewController {
     var totalAmount = 0.0
     var totalSplitAmount = 1.0
     var eachPayAmount = 0.0
-    var firstPercentageAmount = 10.0
-    var secondPercentageAmount = 15.0
-    var thirdPercentageAmount = 20.0
-    var fourthPercentageAmount = 25.0
+//    var firstPercentageAmount = 10.0
+//    var secondPercentageAmount = 15.0
+//    var thirdPercentageAmount = 20.0
+//    var fourthPercentageAmount = 25.0
+    
     
     //MARK: - Life Cycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updateViews()
     }
     
     //MARK: - Functions
     
     func updateViews() {
-
+        
+        firstPercentageLabel.text = String(Tip.instance.firstPercentageAmount.removeZerosFromEnd()) + "%"
+        secondPercentageLabel.text = String(Tip.instance.secondPercentageAmount.removeZerosFromEnd()) + "%"
+        thirdPercentageLabel.text = String(Tip.instance.thirdPercentageAmount.removeZerosFromEnd()) + "%"
+        fourthPercentageLabel.text = String(Tip.instance.fourthPercentageAmount.removeZerosFromEnd()) + "%"
         tipAmountTextField.text = String(format: "%0.2f", round(100 * tipAmount) / 100)
         tipPercentageTextField.text = String(round(100 * tipPercentage) / 100) + "%"
         splitBillTextField.text = String(splitBillAmount.removeZerosFromEnd())
@@ -71,7 +84,7 @@ class CalculatorViewController: UIViewController {
     @IBAction func firstPercentageButtonPressed(_ sender: Any) {
         if billAmountTextField.doubleValue != 0.0 {
             billAmount = billAmountTextField.doubleValue
-            tipAmount = billAmount * firstPercentageAmount / 100
+            tipAmount = billAmount * Tip.instance.firstPercentageAmount / 100
             tipPercentage = tipAmount / billAmount * 100
             print(tipAmount)
             updateViews()
@@ -82,7 +95,7 @@ class CalculatorViewController: UIViewController {
     @IBAction func secondPercentageButtonPressed(_ sender: Any) {
         if billAmountTextField.doubleValue != 0.0 {
             billAmount = billAmountTextField.doubleValue
-            tipAmount = billAmount * secondPercentageAmount / 100
+            tipAmount = billAmount * Tip.instance.secondPercentageAmount / 100
             tipPercentage = tipAmount / billAmount * 100
             updateViews()
         }
@@ -90,7 +103,7 @@ class CalculatorViewController: UIViewController {
     @IBAction func thirdPercentageButtonPressed(_ sender: Any) {
         if billAmountTextField.doubleValue != 0.0 {
             billAmount = billAmountTextField.doubleValue
-            tipAmount = billAmount * thirdPercentageAmount / 100
+            tipAmount = billAmount * Tip.instance.thirdPercentageAmount / 100
             tipPercentage = tipAmount / billAmount * 100
             updateViews()
         }
@@ -98,7 +111,7 @@ class CalculatorViewController: UIViewController {
     @IBAction func fourthPercentageButtonPressed(_ sender: Any) {
         if billAmountTextField.doubleValue != 0.0 {
             billAmount = billAmountTextField.doubleValue
-            tipAmount = billAmount * fourthPercentageAmount / 100
+            tipAmount = billAmount * Tip.instance.fourthPercentageAmount / 100
             tipPercentage = tipAmount / billAmount * 100
             updateViews()
         }
@@ -174,7 +187,11 @@ class CalculatorViewController: UIViewController {
         updateViews()
     }
     @IBAction func tipPercentageEntered(_ sender: Any) {
-        
+        tipPercentage = Double(tipPercentageTextField.text!) ?? tipPercentage
+        if tipPercentageTextField.text == nil {
+            tipPercentageTextField.text = String(round(100 * tipPercentage) / 100) + "%"
+        }
+        updateViews()
     }
     
     @IBAction func splitBillEntered(_ sender: Any) {
@@ -184,6 +201,11 @@ class CalculatorViewController: UIViewController {
         }
         updateViews()
     }
+    
+    //MARK: - Segues
+    
+
+    
     
 }
 

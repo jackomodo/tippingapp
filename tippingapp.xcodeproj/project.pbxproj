@@ -20,6 +20,7 @@
 		1B204D4926BB00B300D1DBC3 /* PercentageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4826BB00B300D1DBC3 /* PercentageButtonView.swift */; };
 		1B204D4B26BB43DB00D1DBC3 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4A26BB43DB00D1DBC3 /* CurrencyTextField.swift */; };
 		1B204D4D26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */; };
+		1B2B8AFE26E7C2AC005E3B01 /* TipPercentages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B8AFD26E7C2AC005E3B01 /* TipPercentages.swift */; };
 		1B57569726CC0C6700089C11 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569626CC0C6700089C11 /* UIViewController+.swift */; };
 		1B57569B26CC214000089C11 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569A26CC214000089C11 /* TopView.swift */; };
 		1B57569D26CEAF9200089C11 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57569C26CEAF9200089C11 /* SettingsViewController.swift */; };
@@ -41,6 +42,7 @@
 		1B204D4826BB00B300D1DBC3 /* PercentageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageButtonView.swift; sourceTree = "<group>"; };
 		1B204D4A26BB43DB00D1DBC3 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		1B204D4C26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalRoundedCornersView.swift; sourceTree = "<group>"; };
+		1B2B8AFD26E7C2AC005E3B01 /* TipPercentages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPercentages.swift; sourceTree = "<group>"; };
 		1B57569626CC0C6700089C11 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		1B57569A26CC214000089C11 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		1B57569C26CEAF9200089C11 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		1B00AC5726A5F9F100D690FA /* tippingapp */ = {
 			isa = PBXGroup;
 			children = (
+				1B2B8AFC26E7C27E005E3B01 /* Services */,
 				1B57569526CC0C4D00089C11 /* Extensions */,
 				1B00AC6E26A780EF00D690FA /* View Controllers */,
 				1B00AC6D26A780E900D690FA /* Views */,
@@ -119,6 +122,14 @@
 				1B57569C26CEAF9200089C11 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1B2B8AFC26E7C27E005E3B01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B2B8AFD26E7C2AC005E3B01 /* TipPercentages.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1B57569526CC0C4D00089C11 /* Extensions */ = {
@@ -206,6 +217,7 @@
 				1B204D4D26BD8FC000D1DBC3 /* TotalRoundedCornersView.swift in Sources */,
 				1B204D4726B06C2300D1DBC3 /* RoundedTotalTranslucentView.swift in Sources */,
 				1B00AC7226AB00B500D690FA /* RoundedCornersWithShadowView.swift in Sources */,
+				1B2B8AFE26E7C2AC005E3B01 /* TipPercentages.swift in Sources */,
 				1B204D4B26BB43DB00D1DBC3 /* CurrencyTextField.swift in Sources */,
 				1B57569726CC0C6700089C11 /* UIViewController+.swift in Sources */,
 				1B00AC5B26A5F9F100D690FA /* SceneDelegate.swift in Sources */,

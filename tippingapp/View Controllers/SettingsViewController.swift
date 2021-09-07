@@ -19,10 +19,10 @@ class SettingsViewController: UIViewController {
     
     //MARK: - Variables
     
-    var firstPercentageAmount = 10.0
-    var secondPercentageAmount = 15.0
-    var thirdPercentageAmount = 20.0
-    var fourthPercentageAmount = 25.0
+//    var firstPercentageAmount = 10.0
+//    var secondPercentageAmount = 15.0
+//    var thirdPercentageAmount = 20.0
+//    var fourthPercentageAmount = 25.0
     
     //MARK: - Life Cycles
     
@@ -41,12 +41,40 @@ class SettingsViewController: UIViewController {
     //MARK: - Functions
     
     func updateViews() {
-        firstPercentageTextField.text = String(firstPercentageAmount.removeZerosFromEnd()) + "%"
-        secondPercentageTextField.text = String(secondPercentageAmount.removeZerosFromEnd()) + "%"
-        thirdPercentageTextField.text = String(thirdPercentageAmount.removeZerosFromEnd()) + "%"
-        fourthPercentageTextField.text = String(fourthPercentageAmount.removeZerosFromEnd()) + "%"
+        firstPercentageTextField.text = String(Tip.instance.firstPercentageAmount.removeZerosFromEnd()) + "%"
+        secondPercentageTextField.text = String(Tip.instance.secondPercentageAmount.removeZerosFromEnd()) + "%"
+        thirdPercentageTextField.text = String(Tip.instance.thirdPercentageAmount.removeZerosFromEnd()) + "%"
+        fourthPercentageTextField.text = String(Tip.instance.fourthPercentageAmount.removeZerosFromEnd()) + "%"
     }
     
     //MARK: - Actions
-
+    @IBAction func firstPercentageEntered(_ sender: Any) {
+        Tip.instance.firstPercentageAmount = Double(firstPercentageTextField.text!) ?? Tip.instance.firstPercentageAmount
+        if firstPercentageTextField.text == nil {
+            firstPercentageTextField.text = String(Tip.instance.firstPercentageAmount.removeZerosFromEnd()) + "%"
+        }
+        updateViews()
+    }
+    @IBAction func secondPercentageEntered(_ sender: Any) {
+        Tip.instance.secondPercentageAmount = Double(secondPercentageTextField.text!) ?? Tip.instance.secondPercentageAmount
+        if secondPercentageTextField.text == nil {
+            secondPercentageTextField.text = String(Tip.instance.secondPercentageAmount.removeZerosFromEnd()) + "%"
+        }
+        updateViews()
+    }
+    @IBAction func thirdPercentageEntered(_ sender: Any) {
+        Tip.instance.thirdPercentageAmount = Double(thirdPercentageTextField.text!) ?? Tip.instance.thirdPercentageAmount
+        if thirdPercentageTextField.text == nil {
+            thirdPercentageTextField.text = String(Tip.instance.thirdPercentageAmount.removeZerosFromEnd()) + "%"
+        }
+        updateViews()
+    }
+    @IBAction func fourthPercentageEntered(_ sender: Any) {
+        Tip.instance.fourthPercentageAmount = Double(fourthPercentageTextField.text!) ?? Tip.instance.fourthPercentageAmount
+        if fourthPercentageTextField.text == nil {
+            fourthPercentageTextField.text = String(Tip.instance.fourthPercentageAmount.removeZerosFromEnd()) + "%"
+        }
+        updateViews()
+    }
+    
 }

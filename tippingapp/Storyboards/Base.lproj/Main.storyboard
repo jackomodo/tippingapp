@@ -466,6 +466,7 @@
                     <tabBarItem key="tabBarItem" title="Calculator" image="icon-calculator" id="n1Y-BM-i2P">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="UEu-hl-Bc5"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="addSplitBillButton" destination="18E-ae-9U6" id="4QE-R8-SYc"/>
@@ -474,13 +475,17 @@
                         <outlet property="billAmountTextField" destination="rBo-PC-VUh" id="O3y-fc-9uH"/>
                         <outlet property="eachPayLabel" destination="eiG-v6-UmZ" id="IKP-uB-EXJ"/>
                         <outlet property="firstPercentageButton" destination="sZK-lC-yt8" id="2ZN-A8-icn"/>
+                        <outlet property="firstPercentageLabel" destination="07o-A6-oGC" id="EW0-gc-eP7"/>
                         <outlet property="fourthPercentageButton" destination="Td6-6a-5xN" id="m4N-50-RL5"/>
+                        <outlet property="fourthPercentageLabel" destination="wyu-87-sWA" id="S5q-CV-3pb"/>
                         <outlet property="minusSplitBillButton" destination="WXp-GC-FNY" id="5u3-5y-isG"/>
                         <outlet property="minusTipAmountButton" destination="cQq-KT-1dM" id="663-ka-AcO"/>
                         <outlet property="minusTipAmountPercentageButton" destination="Utw-8C-RDP" id="MA6-7r-CC3"/>
                         <outlet property="secondPercentageButton" destination="tt3-Qc-pbg" id="vSd-Zm-tDc"/>
+                        <outlet property="secondPercentageLabel" destination="OM8-h7-C3g" id="db7-YX-HdW"/>
                         <outlet property="splitBillTextField" destination="vcn-UA-VNP" id="8ye-aB-abr"/>
                         <outlet property="thirdPercentageButton" destination="RkE-iG-pj9" id="gZT-Uf-29L"/>
+                        <outlet property="thirdPercentageLabel" destination="gK9-rY-rbA" id="NEs-sb-Utj"/>
                         <outlet property="tipAmountTextField" destination="2as-a3-IfQ" id="4Yl-DA-pS7"/>
                         <outlet property="tipPercentageTextField" destination="o1s-St-Ro5" id="HHs-ct-cAn"/>
                         <outlet property="totalAmountLabel" destination="SwR-d3-EJo" id="9DZ-yV-d5v"/>
@@ -549,24 +554,36 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="firstPercentageEntered:" destination="lcA-Bt-LrF" eventType="editingDidEnd" id="INH-fR-SN5"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-UJ-Bge">
                                                 <rect key="frame" x="78.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="secondPercentageEntered:" destination="lcA-Bt-LrF" eventType="editingDidEnd" id="nyC-BV-ftA"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-dX-UeP">
                                                 <rect key="frame" x="157" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="thirdPercentageEntered:" destination="lcA-Bt-LrF" eventType="editingDidEnd" id="QQA-Qb-EjJ"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-52-4FC">
                                                 <rect key="frame" x="235.5" y="0.0" width="68.5" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="0.85094163909999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="fourthPercentageEntered:" destination="lcA-Bt-LrF" eventType="editingDidEnd" id="S0t-ar-Lvq"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
