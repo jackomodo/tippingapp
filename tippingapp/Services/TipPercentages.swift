@@ -16,3 +16,4 @@ class Tip {
     var fourthPercentageAmount = 25.0
     
 }
+
