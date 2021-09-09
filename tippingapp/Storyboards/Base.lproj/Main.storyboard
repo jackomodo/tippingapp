@@ -516,22 +516,12 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiA-IA-ve0">
-                                        <rect key="frame" x="25" y="49" width="58.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Home" image="chevron.backward" catalog="system">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1058823529" green="0.39607843139999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="KZt-CQ-4l3" secondAttribute="bottom" constant="10" id="J4a-gQ-XxA"/>
-                                    <constraint firstAttribute="bottom" secondItem="DiA-IA-ve0" secondAttribute="bottom" constant="10" id="arp-Df-9Ol"/>
                                     <constraint firstItem="KZt-CQ-4l3" firstAttribute="centerX" secondItem="3sk-YB-IyG" secondAttribute="centerX" id="oZ2-GM-SHl"/>
                                     <constraint firstAttribute="height" constant="80" id="wNa-vt-UMM"/>
-                                    <constraint firstItem="DiA-IA-ve0" firstAttribute="leading" secondItem="3sk-YB-IyG" secondAttribute="leading" constant="25" id="y7E-8i-OFG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-mc-KTy" customClass="RoundedTranslucentView" customModule="tippingapp" customModuleProvider="target">
@@ -618,7 +608,6 @@
                     <connections>
                         <outlet property="firstPercentageTextField" destination="Y9x-65-oqE" id="CbR-2Z-TbM"/>
                         <outlet property="fourthPercentageTextField" destination="qRb-52-4FC" id="WJP-0I-dbO"/>
-                        <outlet property="homeButton" destination="DiA-IA-ve0" id="Exm-zf-7q0"/>
                         <outlet property="secondPercentageTextField" destination="7z1-UJ-Bge" id="YUj-ID-CVD"/>
                         <outlet property="thirdPercentageTextField" destination="htQ-dX-UeP" id="IH4-FA-WEK"/>
                     </connections>
@@ -653,7 +642,6 @@
         <image name="background-total" width="453" height="494"/>
         <image name="button-minus" width="28" height="28"/>
         <image name="button-plus" width="28" height="28"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="icon-calculator" width="25" height="25"/>
         <image name="icon-settings" width="25" height="26"/>
         <systemColor name="systemBackgroundColor">
