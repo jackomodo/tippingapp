@@ -48,11 +48,15 @@ class SettingsViewController: UIViewController {
     }
     
     //MARK: - Actions
+    
+    
     @IBAction func firstPercentageEntered(_ sender: Any) {
         Tip.instance.firstPercentageAmount = Double(firstPercentageTextField.text!) ?? Tip.instance.firstPercentageAmount
         if firstPercentageTextField.text == nil {
             firstPercentageTextField.text = String(Tip.instance.firstPercentageAmount.removeZerosFromEnd()) + "%"
         }
+        UserDefaults.standard.set(Tip.instance.firstPercentageAmount, forKey: UserDefaultKeys.firstKey)
+
         updateViews()
     }
     @IBAction func secondPercentageEntered(_ sender: Any) {
@@ -60,6 +64,7 @@ class SettingsViewController: UIViewController {
         if secondPercentageTextField.text == nil {
             secondPercentageTextField.text = String(Tip.instance.secondPercentageAmount.removeZerosFromEnd()) + "%"
         }
+        UserDefaults.standard.set(Tip.instance.secondPercentageAmount, forKey: UserDefaultKeys.secondKey)
         updateViews()
     }
     @IBAction func thirdPercentageEntered(_ sender: Any) {
@@ -67,6 +72,7 @@ class SettingsViewController: UIViewController {
         if thirdPercentageTextField.text == nil {
             thirdPercentageTextField.text = String(Tip.instance.thirdPercentageAmount.removeZerosFromEnd()) + "%"
         }
+        UserDefaults.standard.set(Tip.instance.thirdPercentageAmount, forKey: UserDefaultKeys.thirdKey)
         updateViews()
     }
     @IBAction func fourthPercentageEntered(_ sender: Any) {
@@ -74,6 +80,7 @@ class SettingsViewController: UIViewController {
         if fourthPercentageTextField.text == nil {
             fourthPercentageTextField.text = String(Tip.instance.fourthPercentageAmount.removeZerosFromEnd()) + "%"
         }
+        UserDefaults.standard.set(Tip.instance.fourthPercentageAmount, forKey: UserDefaultKeys.fourthKey)
         updateViews()
     }
     

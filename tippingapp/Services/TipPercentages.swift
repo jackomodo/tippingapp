@@ -10,10 +10,10 @@ import Foundation
 class Tip {
     static let instance = Tip()
     
-    var firstPercentageAmount = 10.0
-    var secondPercentageAmount = 15.0
-    var thirdPercentageAmount = 20.0
-    var fourthPercentageAmount = 25.0
+    var firstPercentageAmount = UserDefaults.standard.double(forKey: UserDefaultKeys.firstKey)
+    var secondPercentageAmount = UserDefaults.standard.double(forKey: UserDefaultKeys.secondKey)
+    var thirdPercentageAmount = UserDefaults.standard.double(forKey: UserDefaultKeys.thirdKey)
+    var fourthPercentageAmount = UserDefaults.standard.double(forKey: UserDefaultKeys.fourthKey)
     
 }
 

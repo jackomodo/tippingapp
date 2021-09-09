@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct UserDefualtKeys {
-    let firstKey = "firstKey"
-    let secondKey = "secondKey"
-    let thirdKey = "thirdKey"
-    let fourthKey = "fourthKey"
+struct UserDefaultKeys {
+    static let firstKey = "firstKey"
+    static let secondKey = "secondKey"
+    static let thirdKey = "thirdKey"
+    static let fourthKey = "fourthKey"
 }

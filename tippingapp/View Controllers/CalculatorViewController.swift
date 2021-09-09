@@ -56,6 +56,7 @@ class CalculatorViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        registerUserDefaults()
         updateViews()
     }
     
@@ -77,6 +78,21 @@ class CalculatorViewController: UIViewController {
     
     func calculateTip() {
         tipPercentage = tipAmount / billAmount * 100
+    }
+    
+    func registerUserDefaults() {
+        if UserDefaults.standard.value(forKey: UserDefaultKeys.firstKey) == nil {
+            UserDefaults.standard.setValue(10.0, forKey: UserDefaultKeys.firstKey)
+        }
+        if UserDefaults.standard.value(forKey: UserDefaultKeys.secondKey) == nil {
+            UserDefaults.standard.setValue(15.0, forKey: UserDefaultKeys.secondKey)
+        }
+        if UserDefaults.standard.value(forKey: UserDefaultKeys.thirdKey) == nil {
+            UserDefaults.standard.setValue(20.0, forKey: UserDefaultKeys.thirdKey)
+        }
+        if UserDefaults.standard.value(forKey: UserDefaultKeys.fourthKey) == nil {
+            UserDefaults.standard.setValue(25.0, forKey: UserDefaultKeys.fourthKey)
+        }
     }
     
     //MARK: - Actions
@@ -201,10 +217,6 @@ class CalculatorViewController: UIViewController {
         }
         updateViews()
     }
-    
-    //MARK: - Segues
-    
-
     
     
 }
