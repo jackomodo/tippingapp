@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="50" width="414" height="1450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-hb-PUy" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1414.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background-hero" translatesAutoresizingMaskIntoConstraints="NO" id="pie-j4-ht1">
                                                 <rect key="frame" x="0.0" y="-30" width="414" height="373"/>
@@ -271,62 +271,8 @@
                                                     <constraint firstAttribute="bottom" secondItem="bKG-OH-8VB" secondAttribute="bottom" constant="45" id="d8K-9a-8Nq"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdi-xM-Fnz" customClass="RoundedCornersWithShadowView" customModule="tippingapp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="681" width="414" height="198.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-rE-kYj">
-                                                        <rect key="frame" x="100" y="45" width="214" height="108.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-52-xdr">
-                                                                <rect key="frame" x="29.5" y="0.0" width="155.5" height="46.5"/>
-                                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pPI-fT-9Ax">
-                                                                <rect key="frame" x="36.5" y="68.5" width="141" height="40"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-GC-FNY">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="40"/>
-                                                                        <state key="normal" image="button-minus"/>
-                                                                        <connections>
-                                                                            <action selector="minusSplitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVM-Aw-ivx"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcn-UA-VNP">
-                                                                        <rect key="frame" x="33" y="0.0" width="75" height="40"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="40" id="tuP-mE-hz1"/>
-                                                                            <constraint firstAttribute="width" constant="75" id="zai-hb-ldR"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                                        <connections>
-                                                                            <action selector="splitBillEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MMw-Uy-a3R"/>
-                                                                        </connections>
-                                                                    </textField>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ae-9U6">
-                                                                        <rect key="frame" x="113" y="0.0" width="28" height="40"/>
-                                                                        <state key="normal" image="button-plus"/>
-                                                                        <connections>
-                                                                            <action selector="addSplitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSZ-Z7-3jM"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.97277206179999998" green="0.972938478" blue="0.97276157139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="YHw-rE-kYj" secondAttribute="bottom" constant="45" id="AiV-si-yAZ"/>
-                                                    <constraint firstItem="YHw-rE-kYj" firstAttribute="leading" secondItem="Qdi-xM-Fnz" secondAttribute="leading" constant="100" id="I5K-KM-7II"/>
-                                                    <constraint firstItem="YHw-rE-kYj" firstAttribute="top" secondItem="Qdi-xM-Fnz" secondAttribute="top" constant="45" id="Vwu-ZS-Boy"/>
-                                                    <constraint firstAttribute="trailing" secondItem="YHw-rE-kYj" secondAttribute="trailing" constant="100" id="dMn-7o-96O"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdV-i0-kr2">
-                                                <rect key="frame" x="0.0" y="891.5" width="414" height="510"/>
+                                                <rect key="frame" x="0.0" y="646" width="414" height="510"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-total" translatesAutoresizingMaskIntoConstraints="NO" id="N7T-jl-qOv">
                                                         <rect key="frame" x="-13" y="0.0" width="437" height="510"/>
@@ -411,24 +357,78 @@
                                                     <constraint firstItem="7dq-0d-zN4" firstAttribute="top" secondItem="kdV-i0-kr2" secondAttribute="top" constant="65" id="sCb-Sp-h7y"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdi-xM-Fnz" customClass="RoundedCornersWithShadowView" customModule="tippingapp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1161" width="414" height="198.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-rE-kYj">
+                                                        <rect key="frame" x="100" y="45" width="214" height="108.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-52-xdr">
+                                                                <rect key="frame" x="29.5" y="0.0" width="155.5" height="46.5"/>
+                                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pPI-fT-9Ax">
+                                                                <rect key="frame" x="36.5" y="68.5" width="141" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-GC-FNY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="40"/>
+                                                                        <state key="normal" image="button-minus"/>
+                                                                        <connections>
+                                                                            <action selector="minusSplitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVM-Aw-ivx"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcn-UA-VNP">
+                                                                        <rect key="frame" x="33" y="0.0" width="75" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="tuP-mE-hz1"/>
+                                                                            <constraint firstAttribute="width" constant="75" id="zai-hb-ldR"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <connections>
+                                                                            <action selector="splitBillEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MMw-Uy-a3R"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ae-9U6">
+                                                                        <rect key="frame" x="113" y="0.0" width="28" height="40"/>
+                                                                        <state key="normal" image="button-plus"/>
+                                                                        <connections>
+                                                                            <action selector="addSplitBillButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSZ-Z7-3jM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.97277206179999998" green="0.972938478" blue="0.97276157139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="YHw-rE-kYj" secondAttribute="bottom" constant="45" id="AiV-si-yAZ"/>
+                                                    <constraint firstItem="YHw-rE-kYj" firstAttribute="leading" secondItem="Qdi-xM-Fnz" secondAttribute="leading" constant="100" id="I5K-KM-7II"/>
+                                                    <constraint firstItem="YHw-rE-kYj" firstAttribute="top" secondItem="Qdi-xM-Fnz" secondAttribute="top" constant="45" id="Vwu-ZS-Boy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YHw-rE-kYj" secondAttribute="trailing" constant="100" id="dMn-7o-96O"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="Qdi-xM-Fnz" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" id="2b0-sm-k28"/>
                                             <constraint firstItem="CTb-NF-a19" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" id="4iw-ca-UMt"/>
                                             <constraint firstAttribute="trailing" secondItem="CTb-NF-a19" secondAttribute="trailing" id="8EF-s5-3aK"/>
                                             <constraint firstItem="pie-j4-ht1" firstAttribute="top" secondItem="SiI-hb-PUy" secondAttribute="top" constant="-30" id="BGE-Ee-Dvn"/>
                                             <constraint firstItem="CTb-NF-a19" firstAttribute="top" secondItem="TrO-sN-0CK" secondAttribute="bottom" constant="45" id="BuP-zh-V5H"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qdi-xM-Fnz" secondAttribute="trailing" id="Caz-HH-Pdc"/>
                                             <constraint firstItem="pie-j4-ht1" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" id="H8J-j6-N8Z"/>
-                                            <constraint firstItem="kdV-i0-kr2" firstAttribute="top" secondItem="Qdi-xM-Fnz" secondAttribute="bottom" constant="12" id="IQI-ce-2tL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qdi-xM-Fnz" secondAttribute="bottom" constant="55" id="IVl-yG-cr1"/>
                                             <constraint firstAttribute="trailing" secondItem="kdV-i0-kr2" secondAttribute="trailing" id="Jej-3L-lOx"/>
                                             <constraint firstItem="TrO-sN-0CK" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" constant="20" id="KLm-Ie-J1i"/>
                                             <constraint firstItem="TrO-sN-0CK" firstAttribute="top" secondItem="SiI-hb-PUy" secondAttribute="top" constant="35" id="Nmn-KS-iAI"/>
-                                            <constraint firstItem="Qdi-xM-Fnz" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" id="Waf-K4-7U6"/>
                                             <constraint firstAttribute="trailing" secondItem="pie-j4-ht1" secondAttribute="trailing" id="ZHc-PZ-OKu"/>
-                                            <constraint firstItem="Qdi-xM-Fnz" firstAttribute="top" secondItem="CTb-NF-a19" secondAttribute="bottom" constant="45" id="gTV-nY-GxR"/>
-                                            <constraint firstAttribute="bottom" secondItem="kdV-i0-kr2" secondAttribute="bottom" constant="45" id="lgI-gU-5Tl"/>
+                                            <constraint firstItem="Qdi-xM-Fnz" firstAttribute="top" secondItem="kdV-i0-kr2" secondAttribute="bottom" constant="5" id="azQ-cC-caZ"/>
                                             <constraint firstAttribute="trailing" secondItem="TrO-sN-0CK" secondAttribute="trailing" constant="20" id="m25-L7-Zuy"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qdi-xM-Fnz" secondAttribute="trailing" id="pmJ-ZO-mlB"/>
+                                            <constraint firstItem="kdV-i0-kr2" firstAttribute="top" secondItem="CTb-NF-a19" secondAttribute="bottom" constant="10" id="rkW-da-Knm"/>
                                             <constraint firstItem="kdV-i0-kr2" firstAttribute="leading" secondItem="SiI-hb-PUy" secondAttribute="leading" id="uPy-sD-WEw"/>
                                         </constraints>
                                     </view>
