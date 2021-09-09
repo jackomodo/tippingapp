@@ -16,6 +16,7 @@ class PercentageButtonView: UIView {
 
     func customizeButton() {
         layer.cornerRadius = frame.width / 2
+        clipsToBounds = true
     }
 
 }

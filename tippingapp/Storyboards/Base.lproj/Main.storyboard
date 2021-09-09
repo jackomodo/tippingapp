@@ -73,7 +73,13 @@
                                                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeK-us-dEJ" customClass="PercentageButtonView" customModule="tippingapp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZK-lC-yt8">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07o-A6-oGC">
+                                                                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                                                <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZK-lC-yt8">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                                 <state key="normal">
                                                                                     <color key="titleColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,12 +88,6 @@
                                                                                     <action selector="firstPercentageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQT-GU-pG5"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07o-A6-oGC">
-                                                                                <rect key="frame" x="5" y="5" width="60" height="60"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                                                                <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.061194792390000002" green="0.27101689579999999" blue="0.76475948100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -112,7 +112,7 @@
                                                                                 <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-Qc-pbg">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-Qc-pbg">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                                 <connections>
                                                                                     <action selector="secondPercentageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhc-0s-2Uq"/>
@@ -137,19 +137,19 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAX-TY-5YG" customClass="PercentageButtonView" customModule="tippingapp" customModuleProvider="target">
                                                                         <rect key="frame" x="178" y="0.0" width="70" height="70"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK9-rY-rbA">
-                                                                                <rect key="frame" x="5" y="5" width="60" height="60"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                                                                <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkE-iG-pj9">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkE-iG-pj9">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                                 <connections>
                                                                                     <action selector="thirdPercentageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjH-N4-LAd"/>
                                                                                     <action selector="thirdPercentageButtonPressed:" destination="C05-p3-cdQ" eventType="touchUpInside" id="LS5-a7-E6j"/>
                                                                                 </connections>
                                                                             </button>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK9-rY-rbA">
+                                                                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                                                <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.062443219129999998" green="0.30129092930000001" blue="0.81212466959999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -174,7 +174,7 @@
                                                                                 <color key="textColor" red="0.96937090159999995" green="0.96953672170000005" blue="0.96936053040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-6a-5xN">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-6a-5xN">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                                                 <connections>
                                                                                     <action selector="fourthPercentageButonPressed:" destination="C05-p3-cdQ" eventType="touchUpInside" id="YJU-S1-D1z"/>
@@ -201,7 +201,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PT4-ek-nnL">
                                                                 <rect key="frame" x="36.5" y="160.5" width="291" height="50"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-KT-1dM">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-KT-1dM">
                                                                         <rect key="frame" x="0.0" y="0.0" width="28" height="50"/>
                                                                         <state key="normal" image="button-minus"/>
                                                                         <connections>
@@ -220,7 +220,7 @@
                                                                             <action selector="tipAmountEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Y14-45-8EC"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnO-7P-5uR">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnO-7P-5uR">
                                                                         <rect key="frame" x="263" y="0.0" width="28" height="50"/>
                                                                         <state key="normal" image="button-plus"/>
                                                                         <connections>
@@ -232,7 +232,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qwx-oG-YTU">
                                                                 <rect key="frame" x="111.5" y="232.5" width="141" height="40"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utw-8C-RDP">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utw-8C-RDP">
                                                                         <rect key="frame" x="0.0" y="0.0" width="28" height="40"/>
                                                                         <state key="normal" image="button-minus"/>
                                                                         <connections>
@@ -251,7 +251,7 @@
                                                                             <action selector="tipPercentageEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="I84-vP-CcO"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azG-Mz-yT3">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azG-Mz-yT3">
                                                                         <rect key="frame" x="113" y="0.0" width="28" height="40"/>
                                                                         <state key="normal" image="button-plus"/>
                                                                         <connections>
@@ -372,7 +372,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pPI-fT-9Ax">
                                                                 <rect key="frame" x="36.5" y="68.5" width="141" height="40"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-GC-FNY">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-GC-FNY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="28" height="40"/>
                                                                         <state key="normal" image="button-minus"/>
                                                                         <connections>
@@ -391,7 +391,7 @@
                                                                             <action selector="splitBillEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MMw-Uy-a3R"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ae-9U6">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ae-9U6">
                                                                         <rect key="frame" x="113" y="0.0" width="28" height="40"/>
                                                                         <state key="normal" image="button-plus"/>
                                                                         <connections>
